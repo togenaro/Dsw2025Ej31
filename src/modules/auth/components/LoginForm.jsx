@@ -34,13 +34,16 @@ function LoginForm() {
     };  
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '5px' }}>
-            <h2>Iniciar Sesión</h2>
+        
+        <form 
+            onSubmit={handleSubmit(onSubmit)} 
+            className="flex flex-col gap-4 w-[80vw] md:w-[30vw]"
+        >
             
             <Input 
                 type="text" 
                 id="username"
-                label="Username"
+                label="Usuario"
                 register={register}
                 rules={rules.username}
                 error={errors.username}
@@ -49,7 +52,7 @@ function LoginForm() {
             <Input 
                 type="password" 
                 id="password"
-                label="Password"
+                label="Contraseña"
                 register={register}
                 rules={rules.password}
                 error={errors.password}

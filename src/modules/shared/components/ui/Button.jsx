@@ -5,7 +5,7 @@ function Button({ type = "button", children, onClick }) {
         <button 
             type={type} 
             onClick={onClick}
-            style={{ marginTop: '10px', padding: '8px 16px', cursor: 'pointer' }}
+            className="w-full p-2.5 mt-2 bg-[#007bff] text-white rounded hover:bg-blue-600 transition-colors cursor-pointer border-none font-medium"
         >
             {children}
         </button>
